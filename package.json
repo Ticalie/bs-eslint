@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-bs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "eslint rule for regex testing for VP-\\d or fix-\\w",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
