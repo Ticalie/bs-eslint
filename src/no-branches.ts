@@ -31,6 +31,4 @@ const noBranchRule: Rule.RuleModule = {
   },
 };
 
-export const rules = {
-  'no-vp-branches': noBranchRule,
-};
+export default noBranchRule;

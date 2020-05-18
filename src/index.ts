@@ -1,5 +1,5 @@
-import { rules } from './no-branches';
+import noBranchRule from './no-branches';
 
-export default {
-  'no-vp-branches': rules['no-vp-branches'],
+export const rules = {
+  'no-vp-branches': noBranchRule,
 };
