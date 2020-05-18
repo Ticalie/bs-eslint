@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/no-use-before-define */
 /* eslint-disable @typescript-eslint/no-var-requires */
 import { RuleTester } from 'eslint';
-import { rule } from '../no-branches';
+import { rules } from '../no-branches';
 
 const ruleTester = new RuleTester();
-ruleTester.run('no-vp-branches', rule['no-vp-branches'], {
+ruleTester.run('no-vp-branches', rules['no-vp-branches'], {
   valid: ['"VP"', '"vp"', '"fix"', '"FIX"', '"Fix"', '"fIx"', '"fiX"', '"FiX"', '"FIx"', '"fIX"', '"fixed"'],
   invalid: [
     {

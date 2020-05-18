@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-bs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "eslint rule for regex testing for VP-\\d or fix-\\w",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -10,7 +10,7 @@
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.ts\"",
     "lint": "eslint src --ext .tsx,.ts",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
