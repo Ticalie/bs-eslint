@@ -1,5 +1,5 @@
 {
-  "name": "bs-eslint-plugin",
+  "name": "eslint-plugin-bs",
   "version": "1.0.0",
   "description": "eslint rule for regex testing for VP-\\d or fix-\\w",
   "main": "lib/index.js",
