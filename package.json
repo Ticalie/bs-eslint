@@ -1,7 +1,7 @@
 {
-  "name": "bs-lint",
-  "version": "1.0.0",
-  "description": "A nice greeter",
+  "name": "eslint-plugin-bs-eslint",
+  "version": "1.0.1",
+  "description": "eslint rule for regex testing for VP-\\d or fix-\\w",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "repository": "https://github.com/Ticalie/bs-eslint.git",
@@ -10,8 +10,8 @@
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "lint": "tslint -p tsconfig.json",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.ts\"",
+    "lint": "eslint src --ext .tsx,.ts",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
@@ -19,7 +19,12 @@
     "postversion": "git push && git push --tags"
   },
   "devDependencies": {
+    "@types/eslint": "^6.8.1",
     "@types/jest": "^25.2.2",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "@typescript-eslint/typescript-estree": "^2.33.0",
+    "babel-eslint": "^10.1.0",
     "jest": "^26.0.1",
     "prettier": "^2.0.5",
     "ts-jest": "^26.0.0",

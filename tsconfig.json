@@ -1,11 +1,17 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
+    "target": "ES6",
+    "module": "CommonJS",
     "declaration": true,
     "outDir": "./lib",
-    "strict": true
+    "strict": false,
+    "moduleResolution": "node"
   },
+  "overrides": [
+    {
+      "parser": "@typescript-eslint/parser"
+    }
+  ],
   "include": ["src"],
   "exclude": ["node_modules", "**/__tests__/*"]
 }
