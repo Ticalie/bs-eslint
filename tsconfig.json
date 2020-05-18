@@ -6,6 +6,11 @@
     "outDir": "./lib",
     "strict": true
   },
+  "overrides": [
+    {
+      "parser": "@typescript-eslint/parser"
+    }
+  ],
   "include": ["src"],
   "exclude": ["node_modules", "**/__tests__/*"]
 }
