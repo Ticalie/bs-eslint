@@ -1,5 +1,5 @@
 import noBranchRule from './no-branches';
 
-export const rules = {
+module.exports.rules = {
   'no-vp-branches': noBranchRule,
 };
